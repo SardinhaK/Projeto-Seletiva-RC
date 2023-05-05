@@ -1,0 +1,46 @@
+MAIN:
+
+FUNCOES:
+    vel_atual:
+    O encoder pode entregar até 4mil ticks por volta, então 4mil ticks por segundo
+    está andando o diametro da roda por sec
+    
+
+
+/* //chanel A e B servem para leitura do encoder
+#define Chanel_A 2
+#define Chanel_B 3
+
+//pinos para controle do motor
+#define motorInput1 10
+#define motorInput2 11
+#define speedA 9
+
+//varia de 0 a 255 e quanto maior mais rápido ele gira
+float motorPWM = 255;
+
+void setup()
+{
+  //configurando portas para controle do motor
+  pinMode(speedA, OUTPUT);
+  pinMode(motorInput1,OUTPUT); 
+  pinMode(motorInput2,OUTPUT);
+  pinMode(Chanel_A,INPUT_PULLUP);
+  pinMode(Chanel_B,INPUT_PULLUP); 
+  Serial.begin(9600); 
+ 
+}
+
+
+void loop()
+{
+  
+	//Controla o sentido do motor
+	digitalWrite(motorInput1, LOW); 
+    digitalWrite(motorInput2, HIGH);
+  	//controla a velocidade do motor
+	analogWrite(speedA,motorPWM);
+
+ 
+}
+ */
